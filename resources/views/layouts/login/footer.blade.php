@@ -4,7 +4,7 @@
             <section class="main_footer_content">
                 <article class="main_footer_content_item">
                     <h2>Sobre:</h2>
-                    <p>O SIS é um Sistema de informação de saúde.
+                    <p>PDC é um Sistema de gestão de saúde.
                     </p>
                     <a title="Termos de uso" href="?file=terms">Termos de uso</a>
                 </article>
