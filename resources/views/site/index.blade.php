@@ -42,7 +42,7 @@
             <article class="radius">
                 <header>
                     <img alt="Contas a pagar" title="Contas a pagar" src="site/images/realizar-exame.png"/>
-                    <h3>Relizar Suas Consultas/Exames</h3>
+                    <h3>Realizar Suas Consultas/Exames</h3>
                     <p>Depois de fazer as suas marcações vai poder concretizar suas consultas e exames na instituição escolhida. É simples!</p>
                 </header>
             </article>
