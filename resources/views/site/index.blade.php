@@ -50,8 +50,8 @@
             <article class="radius">
                 <header>
                     <img alt="Controle e relatórios" title="Controle e relatórios" src="site/images/home_control.jpg"/>
-                    <h3>Controle e relatórios</h3>
-                    <p>Controle seus diagnósticos e acompanha os relatórios do RCU. É gratuito!</p>
+                    <h3>Controle e Relatórios</h3>
+                    <p>Controle seus diagnósticos e acompanhe os relatórios do RCU. É gratuito!</p>
                 </header>
             </article>
         </div>
