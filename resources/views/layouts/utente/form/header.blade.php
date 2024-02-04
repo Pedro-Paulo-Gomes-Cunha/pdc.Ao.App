@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>SIS - Sistema de Informação de Saúde</title>
+    <title>PDC - Sistema de Gestão de Saúde</title>
     <link rel="icon" type="image/png" href="{{asset('site/images/favicon.png')}}"/>
     <link rel="stylesheet" href="{{asset('site/css/styles.css')}}"/>
     <link rel="stylesheet" href="{{asset('site/css/boot.css')}}"/>
