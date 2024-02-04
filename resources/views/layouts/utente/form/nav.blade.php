@@ -4,7 +4,7 @@
 <header class="main_header gradient gradient-green">
   <div class="container">
       <div class="main_header_logo">
-          <h1><a class="icon-coffee transition" title="Home" href="{{route('sis.index')}}"><b>SIS</b></a></h1>
+          <h1><a class="icon-heartbeat transition" title="Home" href="{{route('sis.index')}}"><b>SIS</b></a></h1>
       </div>
 
       <nav class="main_header_nav">
