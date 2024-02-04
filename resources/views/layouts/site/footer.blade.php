@@ -11,10 +11,8 @@
 
                 <article class="main_footer_content_item">
                     <h2>Mais:</h2>
-                    <a class="link transition radius active" title="Home" href="./">Home</a>
                     <a class="link transition radius" title="Sobre" href="?file=about">Sobre</a>
                     <a class="link transition radius" title="Blog" href="?file=blog">Blog</a>
-                    <a class="link transition radius" title="Entrar" href="?file=auth-login">Entrar</a>
                 </article>
 
                 <article class="main_footer_content_item">
