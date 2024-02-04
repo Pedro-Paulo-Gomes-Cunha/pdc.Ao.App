@@ -4,7 +4,7 @@
             <section class="main_footer_content">
                 <article class="main_footer_content_item">
                     <h2>Sobre:</h2>
-                    <p>O SIS é um Sistema de informação de saúde.
+                    <p>O PDC é um Sistema de gestão de saúde.
                     </p>
                     <a title="Termos de uso" href="">Termos de uso</a>
                 </article>
@@ -19,9 +19,9 @@
 
                 <article class="main_footer_content_item">
                     <h2>Contato:</h2>
-                    <p class="icon-phone"><b>Telefone:</b><br> +935056655</p>
-                    <p class="icon-envelope"><b>Email:</b><br> pdc@gmail.com</p>
-                    <p class="icon-map-marker"><b>Endereço:</b><br> Fpolis, SC/Angola</p>
+                    <p class="icon-phone"><b>Telefone:</b><br> (+244) 928612456</p>
+                    <p class="icon-envelope"><b>Email:</b><br> pdc.ao@gmail.com</p>
+                    <p class="icon-map-marker"><b>Endereço:</b><br> Luanda, Angola</p>
                 </article>
 
                 <article class="main_footer_content_item social">
