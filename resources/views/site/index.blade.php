@@ -34,7 +34,7 @@
             <article class="radius">
                 <header>
                     <img alt="Contas a receber" title="Contas a receber" src="site/images/home_receive.jpg"/>
-                    <h3>marcar consultas7Exames</h3>
+                    <h3>Marcar Consultas/Exames</h3>
                     <p>Cadastre  suas marcações de consultas ou exames use as automações e comece a cuidar de sua saúde. É rápido!</p>
                 </header>
             </article>
