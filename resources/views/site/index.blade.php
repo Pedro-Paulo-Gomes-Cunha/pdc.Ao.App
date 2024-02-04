@@ -10,8 +10,8 @@
             <h1>Consultas ou Exames pra Fazer? Comece a cuidar da sua saúde!</h1>
             <p>Cadastre-se, marque suas consultas ou Exames, escolhendo a instituição do PDC mais próxima de ti e com o profissional de saúde de sua escolha!</p>
             <p><a href="{{route('login.form')}}">
-                <span
-                     class="home_featured_btn gradient gradient-green gradient-hover radius transition icon-check-square-o">Criar minha conta e começar a cuidar da minha saúde
+                <span 
+                     class="home_featured_btn gradient gradient-green gradient-hover radius transition icon-check-square-o text-light">Criar minha conta e começar a cuidar da minha saúde
                     </span></a></p>
             <p class="features">Rápido | Simples </p>
         </header>
