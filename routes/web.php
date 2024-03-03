@@ -1,32 +1,30 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('/signin', 'HomeController@signin')->name('login');
+Route::get('/signup', 'HomeController@signup')->name('register');
+Route::post('/signin', 'AuthController@signin')->name('signin');
+Route::post('/signup', 'AuthController@signup')->name('signup');
+Route::get('/logout', 'AuthController@logout')->name('logout');
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+//Route::middleware('auth')->group(function ()
 
-Route::post("/entrar.logado",[LoginController::class, 'auth'] )->name("sis.login.teste");
+Route::middleware('auth')->group(function (){
+    Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
-require __DIR__ .'/site.php';
-require __DIR__ .'/auth.php';
-require __DIR__ .'/admin.php';
-require __DIR__ .'/medico.php';
-require __DIR__ .'/utente.php';
-require __DIR__ .'/consulta.php';
-
-
-
-
-
-
-
+    Route::resource('users', 'UserController')->only(['update', 'edit']);
+    Route::get('/appointments/load', 'AppointmentController@load')->name('appointments.load');
+    Route::get('/appointments/load-all', 'AppointmentController@loadAll')->name('appointments.load-all');
+    Route::get('/appointments/doctor/load', 'AppointmentController@loadDoctor')->name('appointments.doctor.load');
+    Route::get('/appointments/confirm/{id}', 'AppointmentController@confirm')->name('appointments.confirm');
+    Route::get('/appointments/cancel/{id}', 'AppointmentController@cancel')->name('appointments.cancel');
+    Route::resource('appointments', 'AppointmentController');
+    Route::get('/doctors/available', 'DoctorController@getAvailableByDate')->name('doctors.available');
+    Route::resource('doctors', 'DoctorController');
+    Route::get('/patients/available', 'PatientController@getAvailableByDate')->name('patients.available');
+    Route::resource('patients', 'PatientController');
+    Route::resource('admins', 'UserController');
+    Route::get('/users/history', 'UserController@history')->name('users.history');
+});

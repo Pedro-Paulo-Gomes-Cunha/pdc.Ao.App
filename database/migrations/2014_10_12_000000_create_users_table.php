@@ -3,38 +3,37 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\{Utente,Medico};
 
-return new class extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('nome');
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('email');
-            $table->string('foto_anexo')->nullable();
-            $table->enum("perfil", ["utente", "medico", "sis"]);
-            $table->enum('status',["verificado", "pedente"]);
-            $table->foreignIdFor(Utente::class)->nullable();
-            $table->foreignIdFor(Medico::class)->nullable();
-
-
+            $table->string('image')->default('default.png');
+            $table->enum('type', ['patient', 'doctor', 'admin']);
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('users');
     }
-};
+}
